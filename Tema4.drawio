@@ -1,1 +1,103 @@
-<mxfile host="app.diagrams.net" modified="2021-03-25T12:10:35.372Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" version="14.4.9" etag="ZwQLRfwLNVMDOmyu3Va4" type="github"><diagram id="Rmmo2Luhd709amCJHnwk">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-03-25T12:40:44.757Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="Kh9R3vCz6lFGHtPpHmzb" version="14.4.9" type="github">
+  <diagram id="Rmmo2Luhd709amCJHnwk" name="Page-1">
+    <mxGraphModel dx="2044" dy="2043" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Ii78E1zNcRcaHvStYVdR-1" value="" style="shape=folder;fontStyle=1;spacingTop=30;tabWidth=40;tabHeight=14;tabPosition=left;html=1;noLabel=0;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="20" y="880" width="1080" height="304" as="geometry" />
+        </mxCell>
+        <mxCell id="Ii78E1zNcRcaHvStYVdR-2" value="" style="shape=folder;fontStyle=1;spacingTop=30;tabWidth=40;tabHeight=14;tabPosition=left;html=1;noLabel=0;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="50" y="-180" width="1080" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="Ii78E1zNcRcaHvStYVdR-3" value="" style="shape=folder;fontStyle=1;spacingTop=30;tabWidth=40;tabHeight=14;tabPosition=left;html=1;noLabel=0;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="30" y="490" width="1080" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="Ii78E1zNcRcaHvStYVdR-4" value="" style="shape=folder;fontStyle=1;spacingTop=30;tabWidth=40;tabHeight=14;tabPosition=left;html=1;noLabel=0;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="30" y="230" width="1080" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Ii78E1zNcRcaHvStYVdR-5" value="«controller»&#xa;AgendaController&#xa;&#xa;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="414" y="-90" width="300" height="290" as="geometry">
+            <mxRectangle x="210" y="70" width="100" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ii78E1zNcRcaHvStYVdR-6" value="-agendaService: AgendaService" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Ii78E1zNcRcaHvStYVdR-5">
+          <mxGeometry y="40" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Ii78E1zNcRcaHvStYVdR-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Ii78E1zNcRcaHvStYVdR-5">
+          <mxGeometry y="70" width="300" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Ii78E1zNcRcaHvStYVdR-8" value="+ seeForm(model: Model): String&#xa;+ addNewPerson(@ModelAttribute(&quot;person&quot;) person: Person): String&#xa;+ createPerson(@RequestBody person: Person): ResponseEntity&lt;Unit&gt;&#xa;+ getPerson(@PathVariable id: Int): ResponseEntity&lt;Person?&gt;&#xa;+ updatePerson(@PathVariable id: Int, @RequestBody person: Person): ResponseEntity&lt;Unit&gt;&#xa;+ deletePerson(@PathVariable id: Int): ResponseEntity&lt;Unit&gt;&#xa;+ search(@RequestParam(required = false, name = &quot;lastName&quot;, defaultValue = &quot;&quot;) lastName: String,&#xa;                @RequestParam(required = false, name = &quot;firstName&quot;, defaultValue = &quot;&quot;) firstName: String,&#xa;                 @RequestParam(required = false, name = &quot;telephone&quot;, defaultValue = &quot;&quot;) telephoneNumber: String):&#xa;        ResponseEntity&lt;List&lt;Person&gt;&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Ii78E1zNcRcaHvStYVdR-5">
+          <mxGeometry y="78" width="300" height="212" as="geometry" />
+        </mxCell>
+        <mxCell id="Ii78E1zNcRcaHvStYVdR-11" value="«interface»&#xa;AgendaService" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="205" y="276" width="730" height="130" as="geometry">
+            <mxRectangle x="210" y="70" width="100" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ii78E1zNcRcaHvStYVdR-12" value="+ getPerson(id: Int): Person&#xa;+ createPerson(person: Person)&#xa;+ deletePeron(id: Int)&#xa;+ updatePerson(id: Int, person: Person)&#xa;+ searchAgenda(lastNameFilter: String, firstNameFilter: String, telephoneNumberFilter: String): List&lt;Person&gt; " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Ii78E1zNcRcaHvStYVdR-11">
+          <mxGeometry y="40" width="730" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Ii78E1zNcRcaHvStYVdR-17" value="«service»&#xa;AgendaServiceImpl&#xa;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="546" width="390" height="228" as="geometry">
+            <mxRectangle x="210" y="70" width="100" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ii78E1zNcRcaHvStYVdR-18" value="-initialAgenda: Array&lt;Person&gt;&#xa;-agenda: HashMap&lt;id: int, person: Person&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Ii78E1zNcRcaHvStYVdR-17">
+          <mxGeometry y="40" width="390" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ii78E1zNcRcaHvStYVdR-19" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Ii78E1zNcRcaHvStYVdR-17">
+          <mxGeometry y="100" width="390" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Ii78E1zNcRcaHvStYVdR-20" value="&lt;&lt;override&gt;&gt;+ getPerson(id: Int): Person&#xa;&lt;&lt;override&gt;&gt;+ createPerson(person: Person)&#xa;&lt;&lt;override&gt;&gt;+ deletePeron(id: Int)&#xa;&lt;&lt;override&gt;&gt;+ updatePerson(id: Int, person: Person)&#xa;&lt;&lt;override&gt;&gt;+ searchAgenda(lastNameFilter: String, firstNameFilter: String, telephoneNumberFilter: String): List&lt;Person&gt; " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Ii78E1zNcRcaHvStYVdR-17">
+          <mxGeometry y="108" width="390" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ii78E1zNcRcaHvStYVdR-21" value="Person" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="457.5" y="967" width="195" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Ii78E1zNcRcaHvStYVdR-22" value="+ id: Int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Ii78E1zNcRcaHvStYVdR-21">
+          <mxGeometry y="26" width="195" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Ii78E1zNcRcaHvStYVdR-23" value="+ lastName: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Ii78E1zNcRcaHvStYVdR-21">
+          <mxGeometry y="52" width="195" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Ii78E1zNcRcaHvStYVdR-24" value="+ firstName: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Ii78E1zNcRcaHvStYVdR-21">
+          <mxGeometry y="78" width="195" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Ii78E1zNcRcaHvStYVdR-25" value="+ telephoneNumber: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Ii78E1zNcRcaHvStYVdR-21">
+          <mxGeometry y="104" width="195" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Ii78E1zNcRcaHvStYVdR-34" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;entryX=0.469;entryY=1.008;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Ii78E1zNcRcaHvStYVdR-11" target="Ii78E1zNcRcaHvStYVdR-8">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="460" y="170" as="sourcePoint" />
+            <mxPoint x="580" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ii78E1zNcRcaHvStYVdR-35" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;" edge="1" parent="1" source="Ii78E1zNcRcaHvStYVdR-17" target="Ii78E1zNcRcaHvStYVdR-12">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="460" y="460" as="sourcePoint" />
+            <mxPoint x="620" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ii78E1zNcRcaHvStYVdR-38" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;fontSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.502;entryY=0.026;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Ii78E1zNcRcaHvStYVdR-3" target="Ii78E1zNcRcaHvStYVdR-1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="490" y="740" as="sourcePoint" />
+            <mxPoint x="650" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ii78E1zNcRcaHvStYVdR-39" value="Interfaces" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="550" y="250" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Ii78E1zNcRcaHvStYVdR-40" value="Controllers" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="520" y="-130" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Ii78E1zNcRcaHvStYVdR-41" value="Service" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="535" y="514" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Ii78E1zNcRcaHvStYVdR-42" value="POJO" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="515" y="920" width="80" height="26" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
